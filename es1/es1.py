@@ -1,6 +1,6 @@
 import re
 
-def main1():
+def partOne():
     sum = 0
     with open("input_simple.txt") as file:
         for line in file:
@@ -9,7 +9,7 @@ def main1():
             sum = sum + number
     print(sum)       
             
-def main2():
+def partTwo():
     sum = 0
     with open("input2_simple.txt") as file:
         for line in file:
@@ -23,5 +23,5 @@ def numberValue(numb):
     return dic[numb] if (numb in dic.keys()) else numb
 
 if  __name__ == "__main__":
-    main1()
-    main2()
+    partOne()
+    partTwo()
