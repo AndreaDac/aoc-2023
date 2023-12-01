@@ -11,7 +11,7 @@ def main1():
             
 def main2():
     sum = 0
-    with open("input2.txt") as file:
+    with open("input2_simple.txt") as file:
         for line in file:
             singleLine = re.findall ("(?=([1-9]|one|two|three|four|five|six|seven|eight|nine))", line)
             number = int(numberValue(singleLine[0]) + numberValue(singleLine[-1]))
