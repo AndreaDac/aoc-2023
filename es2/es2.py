@@ -1,7 +1,7 @@
 import re
 import numpy
 
-# part 1 of day 2 AOC
+# part 1
 def partOne():
     sum = 0
     with open("input1.txt") as file:
@@ -20,7 +20,7 @@ def isValidCombo(combo):
             return False
     return True
 
-# part 2 of dat 2 AOC
+# part 2 
 def partTwo():
     sum = 0
     with open("input1.txt") as file:
