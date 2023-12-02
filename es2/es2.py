@@ -36,5 +36,5 @@ def findValue(combo):
     return numpy.prod(maxValues)
 
 if __name__=="__main__":
-    #partOne()
+    partOne()
     partTwo()
