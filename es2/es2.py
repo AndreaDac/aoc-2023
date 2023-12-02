@@ -1,4 +1,5 @@
 import re
+import numpy
 
 # part 1 of day 2 AOC
 def partOne():
@@ -32,10 +33,7 @@ def partTwo():
 def findValue(combo):
     resultDict = {color: [int(value) for value, itemColor in map(str.split, combo) if itemColor == color] for _, color in map(str.split, combo)}
     maxValues = [max(values) for values in resultDict.values()]
-    prod = 1
-    for elem in maxValues:
-        prod = prod * elem
-    return prod
+    return numpy.prod(maxValues)
 
 if __name__=="__main__":
     #partOne()
