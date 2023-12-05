@@ -13,7 +13,7 @@ def partOne():
 def matchNumber(winningNumber, myNumber):
     return int(pow(2, len(list(set(winningNumber) & set(myNumber)))-1))
 
-#part Two
+# part Two
 def partTwo():
     dictCard={}
     with open("input1.txt") as file:
